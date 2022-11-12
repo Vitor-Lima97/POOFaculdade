@@ -1,16 +1,16 @@
 package model;
 
 public class Contato {
-    private String contato;
+    private String nome;
     private String telefone;
     private String email;
 
-    public String getContato() {
-        return contato;
+    public String getNome() {
+        return nome;
     }
 
-    public void setContato(String contato) {
-        this.contato = contato;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getTelefone() {

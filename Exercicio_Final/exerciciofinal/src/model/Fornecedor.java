@@ -99,7 +99,7 @@ public class Fornecedor{
                 "endereco= " + endereco + "\n" +
                 "cidade= " + cidade + '\n' +
                 "estado= " + estado + '\n' +
-                "contato= " + contato
+                "contato= " + contato.getNome()
                 ;
     }
 }

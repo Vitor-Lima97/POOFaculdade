@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1439632c-cdf9-4ee5-a350-0e0f60900bf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/GerenciarProdutos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/library/EstadoInvalidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/library/NaoPositivoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/model/Cesta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/model/Contato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/model/Fornecedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicio_Final/exerciciofinal/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HQXZFg29lCZj0pxRCiwfTZgR3E" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1439632c-cdf9-4ee5-a350-0e0f60900bf4" name="Changes" comment="" />
+      <created>1668218335186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668218335186</updated>
+      <workItem from="1668218336611" duration="12288000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

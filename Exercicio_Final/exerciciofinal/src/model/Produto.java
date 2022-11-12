@@ -59,13 +59,12 @@ public class Produto extends Fornecedor{
 
     @Override
     public String toString() {
-        return  "Produto{" +
-                "codigo=" + codigo +
-                "descricao='" + descricao + '\'' +
-                "preco=" + preco +
-                "quantidade=" + quantidade +
-                "fornecedor=" + fornecedor +
-                '}';
+        return  "Produto " + '\n' +
+                "codigo=" + codigo + '\n' +
+                "descricao= " + descricao + '\n' +
+                "preco=" + preco + '\n' +
+                "quantidade=" + quantidade + '\n' +
+                "fornecedor=" + fornecedor +'\n';
     }
 }
 

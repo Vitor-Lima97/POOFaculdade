@@ -36,6 +36,12 @@ public class GerenciarProdutos {
             case 1:
                 gp.execCadastrarFornecedor(sc);
                 break;
+            case 2:
+                gp.execCadastrarProduto(sc);
+                break;
+            case 3:
+                gp.execVisualizarListas(sc);
+                break;
             default:
                 System.out.println("Opcao invalida");
         }
@@ -44,7 +50,7 @@ public class GerenciarProdutos {
     }
 
     public void execCadastrarFornecedor(Scanner sc) {
-        double chosen = 0;
+        int chosen = 0;
         Fornecedor fornecedor = new Fornecedor();
         do {
 
@@ -57,11 +63,11 @@ public class GerenciarProdutos {
             System.out.println("Digite a cidade (Padrão: Mogi Mirim) ");
             fornecedor.setCidade(sc.nextLine());
             System.out.println("Digite o Estado (Padrão: SP)");
-            teste:
+            nulo:
             try {
                 String n = sc.nextLine();
                 if (n.isEmpty()) {
-                    break teste;
+                    break nulo;
                 }
                 fornecedor.estadoinv(n);
             } catch (EstadoInvalidoException e) {
@@ -70,10 +76,43 @@ public class GerenciarProdutos {
             System.out.println(fornecedor);
             System.out.println("Gostaria de alterar algum dado:");
             System.out.println("1 - Sim / 2 - Não");
-            chosen = Double.parseDouble(sc.nextLine());
+            chosen = Integer.parseInt(sc.nextLine());
+            if(fornecedor.getEndereco().isEmpty()==true  || fornecedor.getRazaoSocial().isEmpty()==true){
+                System.out.println("Valores vazios invalidos, favor entrar com valores validos");
+                chosen = 1;
+            }
         } while (chosen != 2);
         fornecedor.fornecedorList.add(fornecedor);
         System.out.println("Fornecedor cadastrado com sucesso");
+    }
+
+    public void execCadastrarProduto(Scanner sc){
+        int chosen = 0;
+        Produto produto = new Produto();
+        do {
+            System.out.println("Digite o codigo do produto: ");
+            produto.setCodigo(Integer.parseInt(sc.nextLine()));
+            System.out.println("Digite a descrição do produto: ");
+            produto.setDescricao(sc.nextLine());
+            System.out.println("Digite o valor do produto: ");
+            produto.setPreco(Double.parseDouble(sc.nextLine()));
+            System.out.println("Digite a quantidade do produto: ");
+            produto.setQuantidade(Integer.parseInt(sc.nextLine()));
+            System.out.println(produto);
+            System.out.println("Gostaria de alterar algum dado:");
+            System.out.println("1 - Sim / 2 - Não");
+            chosen = Integer.parseInt(sc.nextLine());
+        } while (chosen != 2);
+        produtoList.add(produto);
+        System.out.println("Produto cadastrado com sucesso");
+
+    }
+
+    public void execVisualizarListas(Scanner sc){
+        for (Produto p: produtoList) {
+            System.out.println(p.toString());
+            
+        }
     }
 
     }

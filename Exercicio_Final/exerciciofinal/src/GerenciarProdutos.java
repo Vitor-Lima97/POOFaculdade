@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 
 public class GerenciarProdutos {
+    public List<Fornecedor> fornecedorList = new ArrayList<>();
 
     public List<Produto> produtoList = new ArrayList<>();
 
@@ -39,7 +40,7 @@ public class GerenciarProdutos {
             case 2:
                 gp.execCadastrarProduto(sc);
                 break;
-            case 3:
+            case 8:
                 gp.execVisualizarListas(sc);
                 break;
             default:
@@ -53,9 +54,8 @@ public class GerenciarProdutos {
         int chosen = 0;
         Fornecedor fornecedor = new Fornecedor();
         do {
-
-            System.out.println("Digite o codigo do fornecedor: ");
-            fornecedor.setCodigo(Integer.parseInt(sc.nextLine()));
+            System.out.println("Fornecedor codigo: " + fornecedorList.size() );
+            fornecedor.setCodigo(fornecedorList.size());
             System.out.println("Digite a razao social do Fornecedor: ");
             fornecedor.setRazaoSocial(sc.nextLine());
             System.out.println("Digite o endereço do fornecedor: ");
@@ -82,7 +82,7 @@ public class GerenciarProdutos {
                 chosen = 1;
             }
         } while (chosen != 2);
-        fornecedor.fornecedorList.add(fornecedor);
+        fornecedorList.add(fornecedor);
         System.out.println("Fornecedor cadastrado com sucesso");
     }
 
@@ -90,14 +90,20 @@ public class GerenciarProdutos {
         int chosen = 0;
         Produto produto = new Produto();
         do {
-            System.out.println("Digite o codigo do produto: ");
-            produto.setCodigo(Integer.parseInt(sc.nextLine()));
+            System.out.println("Produto codigo: " + produtoList.size() );
+            produto.setCodigo(produtoList.size());
             System.out.println("Digite a descrição do produto: ");
             produto.setDescricao(sc.nextLine());
             System.out.println("Digite o valor do produto: ");
             produto.setPreco(Double.parseDouble(sc.nextLine()));
             System.out.println("Digite a quantidade do produto: ");
             produto.setQuantidade(Integer.parseInt(sc.nextLine()));
+            System.out.println("Selecione o fornecedor: ");
+            for (Fornecedor f: fornecedorList) {
+                System.out.println(f.getCodigo() + " -" + f.getRazaoSocial());
+                System.out.println("+--------------------------------+");
+            }
+            produto.setFornecedor(fornecedorList.get(Integer.parseInt(sc.nextLine())));
             System.out.println(produto);
             System.out.println("Gostaria de alterar algum dado:");
             System.out.println("1 - Sim / 2 - Não");

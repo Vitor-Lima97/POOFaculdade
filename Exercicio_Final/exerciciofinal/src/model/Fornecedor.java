@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fornecedor{
-    public List<Fornecedor> fornecedorList = new ArrayList<>();
+
     private int codigo;
     private String razaoSocial;
     private String endereco;

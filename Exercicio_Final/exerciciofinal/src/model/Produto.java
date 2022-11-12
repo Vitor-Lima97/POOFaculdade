@@ -64,7 +64,7 @@ public class Produto extends Fornecedor{
                 "descricao= " + descricao + '\n' +
                 "preco=" + preco + '\n' +
                 "quantidade=" + quantidade + '\n' +
-                "fornecedor=" + fornecedor +'\n';
+                "fornecedor=" + fornecedor.getRazaoSocial() +'\n';
     }
 }
 
